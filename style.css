@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    --primary-color: #e7e0ee;
+    --sec-color: #F3F1F5;
+    --hover-color: #6724ff;
+    --color: #1f1f1f;
+    --text-color: #F3F1F5;
+}
+body[data-theme= "dark"]{
+    --primary-color: #0f0f0f;
+    --hover-color: #EDEDED;
+    --text-color: #6724ff;
+    --sec-color: #6724ff;
+    --color: #f0f0f0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #6724ff;
+    color: #6724ff;
+}
+.card {
+    width: 350px;
+    height: 350px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--sec-color);
+    border-radius: 10px;
+}
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.btn{
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 1em;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.151);
+    cursor: pointer;
+    background: var(--sec-color);
+    color: var(--color);
+    transition: all .4s;
+}
+.btn:hover{
+    background: var(--hover-color);
+    color: var(--text-color);
+}

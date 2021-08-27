@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Free Source Code</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+</head>
+    <div class="card">
+        <img src="sazumi-img.png" alt="">
+        <h2>Sazumi Vicky</h2>
+        <p>Web Developer & UI/UX Designer</p>
+        <button class="btn">Profile</button>
+    </div>
+
+    <script>
+        const btn = document.querySelector('#btn');
+
+
+        btn.addEventListener("click", (e)=> {
+            if(btn.checked == true){
+                document.body.setAttribute("data-theme", "dark");
+            }else{
+                document.body.setAttribute("data-theme", "");
+            }
+        });
+    </script>
+</body>
+</html>
